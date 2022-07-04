@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 // 200. 岛屿数量
-public class _200NumIslands {
+public class Lc200NumIslands {
 
     public static void main(String[] args) {
         char[][] grid = {{'1','1','0','0','0'},
@@ -10,7 +10,7 @@ public class _200NumIslands {
         {'0','0','1','0','0'},
         {'0','0','0','1','1'}};
 
-        _200NumIslands numIslands =  new _200NumIslands();
+        Lc200NumIslands numIslands =  new Lc200NumIslands();
         int islandNum = numIslands.numIslands(grid);
         System.out.println(islandNum);
     }
