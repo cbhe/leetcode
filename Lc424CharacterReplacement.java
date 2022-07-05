@@ -74,4 +74,24 @@ public class Lc424CharacterReplacement {
         }
         return res;
     }
+
+    public int characterReplacement1(String s, int k) {
+        if (s == null || s.length() == 0) return 0;
+        if (s.length() <= k + 1) return s.length();
+
+        int left = 0;
+        int right = 0;
+        int maxn = 0;
+        int[] num = new int[26];
+        while (right < s.length()){
+            num[s.charAt(right) - 'A']++;
+            maxn = Math.max(maxn, num[s.charAt(right)-'A']);
+            if (right-left+1-maxn > k){
+                num[s.charAt(left)-'A']--;
+                left++;
+            }
+            right++;
+        }
+        return right-left;
+    }
 }
