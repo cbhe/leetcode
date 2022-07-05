@@ -1,8 +1,7 @@
-import java.util.HashMap;
+package 剑指offer;
+
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
-import java.util.logging.Level;
 
 public class Sro48LengthOfLongestSubstring {
 

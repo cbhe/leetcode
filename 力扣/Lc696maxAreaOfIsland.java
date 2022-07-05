@@ -1,3 +1,5 @@
+package 力扣;
+
 public class Lc696maxAreaOfIsland {
 
     public static void main(String[] args) {

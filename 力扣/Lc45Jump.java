@@ -1,3 +1,5 @@
+package 力扣;
+
 public class Lc45Jump {
 
     public static void main(String[] args) {
