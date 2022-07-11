@@ -1,6 +1,5 @@
 package 剑指offer;
 
-import jdk.incubator.foreign.CLinker.VaList;
 import utils.list.ListNode;
 
 public class Sro25mergeTwoLists {

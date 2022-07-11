@@ -27,4 +27,26 @@ public class TreeNode {
             }
         }
     }
+
+    public TreeNode(Integer[] nodeArr){
+        this.val = nodeArr[0];
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(this);
+        for (int i = 1;i<nodeArr.length;i+=2){
+            TreeNode cur = queue.remove();
+            if (nodeArr[i] != null){
+                cur.left = new TreeNode(nodeArr[i]);
+                queue.add(cur.left);
+            }
+            if (i+1 < nodeArr.length && nodeArr[i+1] != null){
+                cur.right = new TreeNode(nodeArr[i+1]);
+                queue.add(cur.right);
+            }
+        }
+    }
+
+    @Override
+    public String toString(){
+        return String.valueOf(this.val);
+    }
 }
