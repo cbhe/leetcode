@@ -15,7 +15,7 @@ public class Lc1025divisorGame {
                 // 只要有一个是 false 则 temp 最终为 false
                 temp = temp && dp[i-j];
             }
-            // 只要下一步有一个是 false(必输), 则这一步必赢
+            // 只要下一步有一个是 false(必输), 则这一步先手必赢
             dp[i] = !temp;
         }
 
